@@ -26,7 +26,7 @@ $(document).ready(function() {
     }
 
     $("#field_all_day").change(function() {
-        if ($(this).attr("checked")) {
+        if ($(this).is(':checked')) {
             $("#field_start_time").attr("disabled", "disabled");
             $("#field_end_time").attr("disabled", "disabled");
         } else {
